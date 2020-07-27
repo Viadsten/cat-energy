@@ -1,12 +1,13 @@
 @import '../mixins.scss';
+@import "../fonts.scss";
+@import "../scaffolding.scss";
+
 
 .page-header{
-  height: 65px;
+  width: 320px;
+  min-height: 65px;
   background-color: $second-color;
   margin-bottom: 1px;
-}
-.main-nav{
-
 }
 
 .page-header__logo-image{
@@ -36,12 +37,41 @@
   margin-left: 3px;
 }
 
-.main-nav__wrapper{
-  display: none;
+.main-nav__list{
+  height: 215px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #000;
+  text-align: center;
 }
+
 .main-nav__line{
   background-color: #d9d9d9;
   width: 320px;
   height: 1px;
   border: none;
+  margin-bottom: 25px;
+}
+
+.main-nav__link{
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.site-list__item{
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width){
+  .page-header{
+    display: flex;
+  }
+
+  .main-nav__toggle{
+    display: none;
+  }
 }

@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  src: url("Oswald/static/oswald-regular.woff") format(woff), url("Oswald/static/oswald-regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-color: white;
+  font-family: 'Oswald';
+  width: 320px;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
 .page-header {
-  height: 65px;
+  width: 320px;
+  min-height: 65px;
   background-color: white;
   margin-bottom: 1px; }
 
@@ -27,14 +44,42 @@
   margin-top: 23px;
   margin-left: 3px; }
 
-.main-nav__wrapper {
-  display: none; }
+.main-nav__list {
+  height: 215px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #000;
+  text-align: center; }
 
 .main-nav__line {
   background-color: #d9d9d9;
   width: 320px;
   height: 1px;
-  border: none; }
+  border: none;
+  margin-bottom: 25px; }
+
+.main-nav__link {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+.site-list__item {
+  margin-bottom: 25px; }
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex; }
+  .main-nav__toggle {
+    display: none; } }
+
+@font-face {
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  src: url("Oswald/static/oswald-regular.woff") format(woff), url("Oswald/static/oswald-regular.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal; }
 
 .weight-program__header {
   height: 479px;
@@ -283,10 +328,20 @@
   margin-left: 96px; }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url("Oswald/static/Oswald-Regular.ttf") format("truetype");
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  src: url("Oswald/static/oswald-regular.woff") format(woff), url("Oswald/static/oswald-regular.woff2") format(woff2);
   font-weight: normal;
   font-style: normal; }
+
+body {
+  background-color: white;
+  font-family: 'Oswald';
+  width: 320px;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 * {
   margin: 0;
@@ -294,8 +349,3 @@
 
 .visually-hidden {
   display: none; }
-
-body, html {
-  background-color: white;
-  font-family: "Oswald";
-  width: 320px; }
