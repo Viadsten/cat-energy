@@ -1,0 +1,47 @@
+@import '../mixins.scss';
+
+.page-header{
+  height: 65px;
+  background-color: $second-color;
+  margin-bottom: 1px;
+}
+.main-nav{
+
+}
+
+.page-header__logo-image{
+  margin: 11px 61px 16px 20px;
+  width: 191px;
+  height: 38px;
+}
+
+.main-nav__toggle{
+  vertical-align:top;
+  width: 24px;
+  height: 18px;
+  margin-top: 23px;
+  margin-left: 0px;
+  border: none;
+  background-image: url('../img/mobile-menu.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $second-color;
+}
+
+.main-nav__toggle--active{
+  background-image: url('../img/mobile-menu--close.png');
+  width: 18px;
+  height: 18px;
+  margin-top: 23px;
+  margin-left: 3px;
+}
+
+.main-nav__wrapper{
+  display: none;
+}
+.main-nav__line{
+  background-color: #d9d9d9;
+  width: 320px;
+  height: 1px;
+  border: none;
+}

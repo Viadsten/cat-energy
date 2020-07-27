@@ -1,0 +1,98 @@
+@import "../mixins.scss";
+
+.weight-program__header{
+  height: 479px;
+  background-image: url('../img/index-background-mobile.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.weight-program__tag{
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: $second-color;
+  text-align: center;
+  padding: 27px 0 25px 0px;
+}
+
+.weight-program__slogan{
+  font-size: 14px;
+  line-height: 14px;
+  color: $second-color;
+  text-transform: uppercase;
+  padding-left: 60px;
+}
+
+.weight-program__slogan-image{
+  margin: 29px 0 1px 20px;
+}
+
+.weight-program__button{
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $second-color;
+  background-color: $primary-color;
+  margin: 0 0 22px 20px;
+  padding: 0;
+}
+
+.weight-program__section{
+  height: 265px;
+  width: 280px;
+  background-color: #f2f2f2;
+  margin: 23px 0 20px 20px;
+}
+
+.weight-program__name-container{
+  display: flex;
+  padding: 22px 0 20px 22px;
+}
+
+.icon-powerfulcat{
+  padding: 22px 0 21px 13px;
+}
+
+.weight-program__name{
+  padding: 14px 0 0 19px;
+  vertical-align: top;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.name-powerfulcat{
+  padding: 12px 0 0 11px;
+}
+
+.weight-program__description{
+  @include description;
+  padding: 1px 0 22px 20px;
+}
+
+.weight-program__line{
+  background-color: #d9d9d9;
+  width: 240px;
+  height: 1px;
+  border: none;
+  margin: 0 0 18px 20px;
+}
+
+.weight-program__catalog-button{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  color: #000;
+}
+
+.weight-program__arrow{
+  margin-left: 8px;
+}

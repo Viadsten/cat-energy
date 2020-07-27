@@ -1,27 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <title>Cat energy</title>
     </head>
     <body>
         <header class="page-header">
-            <a class="page-header__logo-link">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" heigh="38" alt="Cat energy">
-            </a>
             <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">Открыть меню</button>
+              <a class="page-header__logo-link">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" heigh="38" alt="Cat energy">
+              </a>
+              <button class="main-nav__toggle" type="button" id="nav-btn"></button>
                 <div class="main-nav__wrapper">
                     <!--<img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" heigh="38" alt="Cat energy">-->
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item">
-                            <a href="index.html">Главная</a>
+                          <hr class="main-nav__line">
+                          <a href="index.html">Главная</a>
+                          <hr class="main-nav__line">
                         </li>
                         <li class="site-list__item">
-                            <a href="catalog.html">Каталог продукции</a>
+                          <hr class="main-nav__line">
+                          <a href="catalog.html">Каталог продукции</a>
+                          <hr class="main-nav__line">
                         </li>
                         <li class="site-list__item">
-                            <a href="program.html">Подбор программы</a>
+                          <hr class="main-nav__line">
+                          <a href="program.html">Подбор программы</a>
+                          <hr class="main-nav__line">
                         </li>
                     </ul>
                 </div>
@@ -33,50 +42,56 @@
                 <header class="weight-program__header">
                     <h2 class="weight-program__tag">Функциональное<br>питание для котов</h2>
                     <p class="weight-program__slogan">Занялся собой? Займись котом!</p>
-                    <img src="img/chiken-product-mobile.png" width="280" height="270" alt="Cat energy со вкусом курицы">
+                    <img class="weight-program__slogan-image" src="img/chiken-product-mobile.png" width="280" height="270" alt="Cat energy со вкусом курицы">
                     <button class="weight-program__button" type="button">Подобрать программу</button>
                 </header>
                 <div class="weight-program__section">
-                    <img src="img/slim-cat-mobile.png" width="35" height="49">
+                  <div class="weight-program__name-container">
+                    <img class="a" src="img/slim-cat-mobile.png" width="50" height="53">
+                    <h3 class="weight-program__name">Похудение</h3>
+                  </div>
                     <p class="weight-program__description">Ваш кот весит больше собаки и<br>
                     почти утратил способность лазить<br>по деревьям? Пора на диету! Cat<br>
                     Energy Slim поможет вашему<br>питомцу сбросить лишний вес.</p>
                     <hr class="weight-program__line">
                     <a href="#" class="weight-program__catalog-button" alt="Каталог Slim">
-                        Каталог Slim <img src="img/right-arrow-mobile.png" height="11" width="24">
+                        Каталог Slim <img src="img/right-arrow-mobile.png" class="weight-program__arrow" height="11" width="24">
                     </a>
                 </div>
                 <div class="weight-program__section">
-                    <img src="img/powerful-cat-mobile.png" width="67" height="28">
-                    <p class="weight-program__description">Заработать авторитет среди<br>
+                  <div class="weight-program__name-container icon-powerfulcat">
+                    <img src="img/powerful-cat-mobile.png" width="67" height="50">
+                    <h3 class="weight-program__name name-powerfulcat">Набор массы</h3>
+                  </div>
+                    <p class="weight-program__description ">Заработать авторитет среди<br>
                     дворовых котов и даже собак?<br>Серия Cat Energy Pro поможет<br>
-                    Вашему коту нарастить<br>необходимые мышцы!</p>
+                    вашему коту нарастить<br>необходимые мышцы!</p>
                     <hr class="weight-program__line">
                     <a href="#" class="weight-program__catalog-button" alt="Каталог Pro">
-                        Каталог Pro <img src="img/right-arrow-mobile.png" height="11" width="24">
+                        Каталог Pro <img src="img/right-arrow-mobile.png" class="weight-program__arrow" height="11" width="24">
                     </a>
                 </div>
             </section>
             <section class="advantages">
                 <h2 class="advantages__title">Как это работает</h2>
                 <ul class="advantages__list">
-                    <li class="advantages__item--healthy">
-                        <img src="img/advantage-1-mobile.png" width="26" height="29">
+                    <li class="advantages__item">
+                        <img src="img/advantage-1-mobile.png" width="60" height="60">
                         <p class="advantages__description">Функциональное питание<br>
                         содержит только полезные<br>питательные вещества.</p>
                     </li>
-                    <li class="advantages__item--quick">
-                        <img src="img/andvantage-2-mobile.png" width="29" height="31">
+                    <li class="advantages__item">
+                        <img src="img/advantage-2-mobile.png" width="60" height="60">
                         <p class="advantages__description">Выпускается в виде порошка,<br>
                         который нужно лишь залить<br>кипятком и готово.</p>
                     </li>
-                    <li class="advantages__item--portion">
-                        <img src="img/advantage-3-mobile.png" width="23" height="30">
+                    <li class="advantages__item">
+                        <img src="img/advantage-3-mobile.png" width="60" height="60">
                         <p class="advantages__description">Замените один-два приема<br>
                         обычной еды на наше<br>функциональное питание.</p>
                     </li>
-                    <li class="advantages__item--changes">
-                        <img src="img/advantage-4-mobile.png" width="26" height="31">
+                    <li class="advantages__item">
+                        <img src="img/advantage-4-mobile.png" width="60" height="60">
                         <p class="advantages__description">Уже через месяц<br>
                         наслаждайтесь изменениями<br>к лучшему вашего питомца.</p>
                     </li>
@@ -90,50 +105,64 @@
                 спит по 16 часов в день.</p>
                 <ul class="example__list">
                     <li class="example__item">
+                      <img src="img/weight-back.png" width="124" height="56">
+                      <div class="example__image-cell">
                         <b class="example__number">5 кг</b>
-                        <p class="example__text">снижение веса</p>
+                        <p class="example__text">снижение<br>веса</p>
+                      </div>
                     </li>
                     <li class="example__item">
+                      <img src="img/weight-back.png" width="124" height="56">
+                      <div class="example__image-cell">
                         <b class="example__number">60 дней</b>
-                        <p class="example__text">затраченого времени</p>
+                        <p class="example__text">затрачено<br>времени</p>
+                    </div>
                     </li>
                 </ul>
                 <p class="example__cost">Затраты на питание: 15 000 руб.</p>
                 <div class="example-cat">
-                    <ul class="example-cat__list">
-                        <li class="example-cat__list-item">
-                            <input type="radio" name="example-cat__radio" id="fat-cat" checked>
-                            <label>Было</label>
-                        </li>
-                        <li class="example-cat__list-item">
-                            <input type="radio" name="example-cat__radio" id="slim-cat">
-                            <label>Стало</label>
-                        </li>
-                    </ul>
+                  <img src="img/before-mobile.png" class="example-cat__img--before " width="311" height="232">
+                  <img src="img/after-mobile.png" class="example-cat__img--after" width="251" height="240">
+                  <div class="example-cat__selector">
+                    <button type="button" class="example-cat__button--before">Было</button>
+                    <figure class="example-cat__out-selector">
+                      <figure class="example-cat__in-selector--before" id="cat-selector"></figure>
+                    </figure>
+                    <button type="button" class="example-cat__button--after">Стало</button>
+                  </div>
                 </div>
             </section>
             <section class="contacts">
-                <b class="contacts__text">Приглашаем к сотрудничеству диллеров!</b>
-                <p class="contacts__adress">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
-                <ifframe>Map</ifframe>
+              <div class="contacts__adress">
+                <b class="contacts__text">Приглашаем<br>к сотрудничеству<br>дилеров!</b>
+                <p class="contacts__adress-text">ул. Большая<br>Конюшенная, д.19/8<br>Санкт-Петербург</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586871!2d30.320853352032305!3d59.93871648178722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595828441770!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </section>
             <footer class="page-footer">
                 <div class="page-footer__social social">
                     <ul class="social__list">
                         <li class="social__item">
-                            <a class="social__link social__link--vk">VK</a>
+                            <a class="social__link social__link--vk">
+                              <img src="img/m-vk.png" width="22" height="12">
+                            </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link social__link--instagram">Inst</a>
+                            <a class="social__link social__link--instagram">
+                              <img src="img/m-insta.png" width="16" height="16">
+                            </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link social__link--facebook">Facebook</a>
+                            <a class="social__link social__link--facebook">
+                              <img src="img/m-fb.png" width="10" height="19">
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <hr class="footer__line">
-                <img src="img/footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
+                <img class="footer-logo" src="img/footer-logo.svg" alt="Логотип Cat Energy" width="128" height="24">
             </footer>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>

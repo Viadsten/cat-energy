@@ -1,0 +1,102 @@
+@import "../mixins.scss";
+
+.example{
+  height: 637px;
+  background-color: $third-color;
+  padding: 29px 20px 39px 20px;
+}
+
+.example__title{
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.example__description{
+  @include description;
+  margin-top: 35px;
+}
+
+.example__list{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item{
+  width: 124px;
+  height: 69px;
+  list-style: none;
+}
+
+.example__image-cell{
+  margin-top: -43px;
+  text-align: center;
+}
+
+.example__number{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.example__text{
+  margin-top: 7px;
+  font-family: 'Arial';
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__cost{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 24px;
+  margin-bottom: 45px;
+}
+.example-cat__selector{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 44px 0 44px;
+}
+
+.example-cat__img--before{
+  margin: 0 0 33px -20px;
+}
+
+.example-cat__img--after{
+  margin: -8px 0 33px 23px;
+  display: none;
+}
+
+.example-cat__button--before{
+  @include example-cat__button;
+  margin-right: 4px;
+}
+
+.example-cat__button--after{
+  @include example-cat__button;
+}
+
+.example-cat__out-selector{
+  width: 84px;
+  height: 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  background-color: $second-color;
+}
+
+.example-cat__in-selector--before{
+  width: 35px;
+  height: 6px;
+  border: none;
+  border-radius: 3px;
+  background-color: $primary-color;
+  margin: 3px 0 0 6px;
+}
+
+.example-cat__in-selector--after{
+  margin-left: 37px;
+}

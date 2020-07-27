@@ -1,0 +1,30 @@
+@import "blocks/main-nav.scss";
+@import "blocks/weight-program.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "mixins.scss";
+
+@font-face{
+    font-family: 'Oswald';
+    src: url('Oswald/static/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden{
+    display: none;
+}
+
+body, html{
+  background-color: $second-color;
+  font-family: "Oswald";
+  width: 320px;
+}
+

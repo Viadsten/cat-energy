@@ -1,0 +1,24 @@
+@import "../mixins.scss";
+
+.advantages__title{
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 28px 0 0 20px;
+}
+
+.advantages__list{
+  margin: 40px 0 42px 20px;
+  list-style: none;
+}
+
+.advantages__item{
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.advantages__description{
+  @include description;
+  margin-left: 20px;
+  margin-top: 2px;
+}

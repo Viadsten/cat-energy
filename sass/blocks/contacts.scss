@@ -1,0 +1,23 @@
+@import "../mixins.scss";
+
+.contacts__adress{
+  height: 57px;
+  padding: 28px 25px 29px 19px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contacts__text{
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 125px;
+}
+
+.contacts__adress-text{
+  @include description;
+  line-height: 20px;
+  width: 135px;
+}
