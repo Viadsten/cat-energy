@@ -1,14 +1,27 @@
 $tablet-width: 768px;
+$desktop-width: 1440px;
 
 body{
   background-color: $second-color;
   font-family: 'Oswald';
   width: 320px;
-  margin: 0 auto;
-  padding: 0px;
+  /*margin: 0 auto;*/
 }
 
 img{
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: $tablet-width){
+  body{
+    width: $tablet-width;
+    /*margin: 0 auto;*/
+  }
+}
+
+@media (min-width: $desktop-width){
+  body{
+    width: $desktop-width;
+  }
 }

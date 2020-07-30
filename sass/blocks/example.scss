@@ -15,6 +15,7 @@
 .example__description{
   @include description;
   margin-top: 35px;
+  width: 266px;
 }
 
 .example__list{
@@ -46,6 +47,12 @@
   font-family: 'Arial';
   font-size: 12px;
   line-height: 12px;
+  width: 55px;
+  margin-left: 35px;
+}
+
+.example-cat{
+  height: 330px;
 }
 
 .example__cost{
@@ -59,16 +66,23 @@
 .example-cat__selector{
   display: flex;
   justify-content: space-between;
-  padding: 0 44px 0 44px;
+  padding: 265px 44px 0 44px;
 }
 
 .example-cat__img--before{
+  position: absolute;
   margin: 0 0 33px -20px;
+  width: 311px;
+  height: 232px;
 }
 
 .example-cat__img--after{
-  margin: -8px 0 33px 23px;
+  position: absolute;
+  margin: -15px 0 33px 23px;
   display: none;
+  width: 251px;
+  height: 240px;
+
 }
 
 .example-cat__button--before{
@@ -99,4 +113,94 @@
 
 .example-cat__in-selector--after{
   margin-left: 37px;
+}
+
+@media (min-width: $tablet-width){
+  .example{
+    background-color: $second-color;
+    padding: 15px 30px 0 30px;
+  }
+
+  .example__title{
+    @include header--tablet;
+  }
+
+  .example__description{
+    @include description--tablet;
+    width: 680px;
+    margin-top: 64px;
+  }
+
+  .example__list-container{
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+  }
+
+  .example__list{
+    justify-content: flex-start;
+    width: 408px;
+    margin-top: 53px;
+  }
+  .example__item{
+    width: 173px;
+    margin-right: 42px;
+  }
+
+  .example__border{
+    width: 173px;
+    height: 72px;
+  }
+
+  .example__cost{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 27px;
+    width: 175px;
+    margin-top: 62px;
+  }
+
+  .example__text{
+    margin-top: 10px;
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .example__number{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 37px;
+  }
+
+  .example__image-cell{
+    margin-top: -58px;
+  }
+
+  .example-cat{
+    margin: 150px -30px 0 -30px;
+    height: 460px;
+    background-color: $third-color;
+  }
+  .example-cat__img--before{
+    margin: -153px 0 33px 45px;
+    width: 677px;
+    height: 499px;
+  }
+
+  .example-cat__img--after{
+    margin: -168px 0 33px 110px;
+    display: none;
+    width: 545px;
+    height: 517px;
+
+  }
+
+  .example-cat__selector{
+    padding: 350px 44px 0 44px;
+  }
 }

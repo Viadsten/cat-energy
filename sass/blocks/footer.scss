@@ -24,3 +24,24 @@
   margin-bottom: 39px;
   margin-left: 96px;
 }
+
+@media (min-width: $tablet-width){
+  .footer__line{
+    display: none;
+  }
+  .page-footer{
+    margin-top: -2px;
+    background-color: $third-color;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .footer-logo{
+    margin: 0;
+  }
+  .social__list{
+    width: 125px;
+    margin-left: 75px;
+  }
+}
