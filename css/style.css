@@ -437,6 +437,18 @@ img {
     margin-top: -39px;
     margin-left: 119px; } }
 
+@media (min-width: 1440px) {
+  .advantages {
+    margin-top: 27px; }
+  .advantages__title {
+    margin-left: 80px; }
+  .advantages__list {
+    width: 1220px;
+    margin-left: 80px; }
+  .advantages__item {
+    width: 245px;
+    height: 275px; } }
+
 .example {
   height: 637px;
   background-color: #f2f2f2;
@@ -493,6 +505,9 @@ img {
   line-height: 14px;
   margin-top: 24px;
   margin-bottom: 45px; }
+
+.example__cost--desktop {
+  display: none; }
 
 .example-cat__selector {
   display: flex;
@@ -613,6 +628,34 @@ img {
   .example-cat__selector {
     padding: 350px 44px 0 44px; } }
 
+@media (min-width: 1440px) {
+  .example__title, .example__description {
+    margin-left: 80px; }
+  .example__list-container {
+    display: block;
+    margin-left: 80px; }
+  .example-cat {
+    margin-top: -464px;
+    padding-left: 635px; }
+  .example-cat__selector {
+    width: 570px; }
+  .example__description {
+    margin-top: 146px;
+    width: 435px;
+    margin-bottom: 67px; }
+  .example__cost {
+    display: none; }
+  .example__cost--desktop {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 27px;
+    width: 330px;
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between; } }
+
 .contacts__adress {
   height: 57px;
   padding: 28px 25px 29px 19px;
@@ -646,11 +689,30 @@ img {
     margin-top: 88px;
     width: 768px;
     height: 400px; }
-  .contacts__adress-text {
+  .c {
     text-align: right;
     font-size: 16px;
     width: 170px;
     margin: 47px 52px 0 0; } }
+
+@media (min-width: 1440px) {
+  .contacts {
+    margin-top: 0px; }
+  .contacts__adress {
+    margin: 55px 0 0 110px;
+    padding: 0;
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    background-color: white; }
+  .contacts__map {
+    margin-top: -42px;
+    width: 1440px;
+    height: 400px; }
+  .contacts__text {
+    margin: 52px 0 20px 72px; }
+  .contacts__adress-text {
+    margin: 62px 72px 20px 0; } }
 
 .social__list {
   padding: 23px 102px 23px 93px;
@@ -688,6 +750,10 @@ img {
   .social__list {
     width: 125px;
     margin-left: 75px; } }
+
+@media (min-width: 1440px) {
+  .social__list {
+    margin-left: 405px; } }
 
 @font-face {
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
