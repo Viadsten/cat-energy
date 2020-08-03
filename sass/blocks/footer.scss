@@ -29,14 +29,22 @@
   .footer__line{
     display: none;
   }
-  .page-footer{
-    margin-top: -2px;
+  .page-footer--wide{
+    width: 100vw;
+    margin-left: calc((100vw - 768px) / -2);
     background-color: $third-color;
+  }
+  .page-footer{
+    align-items: center;
+    width: 708px;
+    margin-top: -2px;
     padding: 35px 30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-left: calc((100vw - 768px) / 2);
   }
+
   .footer-logo{
     margin: 0;
   }
@@ -49,5 +57,11 @@
 @media (min-width: $desktop-width){
   .social__list{
     margin-left: 405px;
+  }
+  .page-footer--wide{
+    margin-left: calc((100vw - 1440px) / -2);
+  }
+  .page-footer{
+    margin-left: calc((100vw - 1440px) / 2);
   }
 }

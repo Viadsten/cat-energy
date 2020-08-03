@@ -5,7 +5,7 @@ body{
   background-color: $second-color;
   font-family: 'Oswald';
   width: 320px;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
 }
 
 img{
@@ -16,7 +16,6 @@ img{
 @media (min-width: $tablet-width){
   body{
     width: $tablet-width;
-    /*margin: 0 auto;*/
   }
 }
 
@@ -24,4 +23,5 @@ img{
   body{
     width: $desktop-width;
   }
+
 }
