@@ -1,10 +1,10 @@
 $tablet-width: 768px;
 $desktop-width: 1440px;
+$mobile-width: 320px;
 
 body{
   background-color: $second-color;
   font-family: 'Oswald';
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -13,15 +13,16 @@ img{
   height: auto;
 }
 
-@media (min-width: $tablet-width){
-  body{
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width){
-  body{
-    width: $desktop-width;
-  }
-
+.visually-hidden:not(:focus):not(:active){
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  transition: 0.2s;
 }

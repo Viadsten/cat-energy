@@ -1,6 +1,10 @@
 @import "../mixins.scss";
 @import "../fonts.scss";
 
+.weight-program{
+  width: 320px;
+  margin: 0 auto;
+}
 .weight-program__header{
   height: 479px;
   background-image: url('../img/index-background-mobile.jpg');

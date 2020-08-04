@@ -1,8 +1,14 @@
 @import "../mixins.scss";
 
-.example{
-  height: 637px;
+.example--wide{
+  width: 100%;
   background-color: $third-color;
+}
+
+.example{
+  width: 320px;
+  height: 637px;
+  margin: 0 auto;
   padding: 29px 20px 39px 20px;
 }
 
@@ -211,6 +217,7 @@
 }
 
 @media (min-width: $desktop-width){
+
   .example__title, .example__description{
     margin-left: 80px;
   }
