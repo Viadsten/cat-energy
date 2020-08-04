@@ -55,6 +55,7 @@ img {
   background-image: url("../img/mobile-menu.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover 0;
   background-color: white; }
 
 .main-nav__toggle--after {
@@ -63,9 +64,6 @@ img {
   height: 18px;
   margin-top: 23px;
   margin-left: 3px; }
-
-.main-nav {
-  transition: 0.2s; }
 
 .main-nav__list {
   height: 215px;
@@ -165,15 +163,25 @@ img {
   font-weight: normal;
   font-style: normal; }
 
-.weight-program {
+.weight-program__container {
   width: 320px;
   margin: 0 auto; }
 
 .weight-program__header {
-  height: 479px;
+  width: 100%;
+  margin: 0 auto;
+  height: 480px;
+  margin-bottom: 22px; }
+
+.weight-program__cover {
+  margin: 0 auto;
+  min-height: 305px;
+  max-height: 420px;
+  max-width: 520px;
   background-image: url("../img/index-background-mobile.jpg");
-  background-position: top;
-  background-repeat: no-repeat; }
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .weight-program__tag {
   font-size: 36px;
@@ -187,11 +195,11 @@ img {
   font-size: 14px;
   line-height: 14px;
   color: white;
-  text-transform: uppercase;
-  padding-left: 60px; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .weight-program__slogan-image {
-  margin: 29px 0 1px 20px; }
+  margin: 29px 0 1px 120px; }
 
 .weight-program__slogan-tablet,
 .weight-program__slogan-desktop,
@@ -208,7 +216,7 @@ img {
   text-transform: uppercase;
   color: white;
   background-color: #68b738;
-  margin: 0 0 22px 20px;
+  margin: 0 0 22px 120px;
   padding: 0; }
 
 .weight-program__slim-cat--desktop {

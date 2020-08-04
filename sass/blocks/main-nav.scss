@@ -35,6 +35,7 @@
   background-image: url('../img/mobile-menu.png');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover 0;
   background-color: $second-color;
 }
 
@@ -46,9 +47,6 @@
   margin-left: 3px;
 }
 
-.main-nav{
-  transition: 0.2s;
-}
 .main-nav__list{
   height: 215px;
   list-style: none;
