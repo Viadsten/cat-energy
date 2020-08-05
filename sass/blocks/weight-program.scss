@@ -11,18 +11,20 @@
   margin: 0 auto;
   height: 480px;
   margin-bottom: 22px;
-}
 
-.weight-program__cover{
-  margin: 0 auto;
-  min-height: 305px;
-  max-height: 420px;
-  max-width: 520px;
+}
+.weight-program__background{
+  background-color: #65a93c;
+  height: 305px;
+
   background-image: url('../img/index-background-mobile.jpg');
   background-position: center 0;
   background-repeat: no-repeat;
-  background-size: cover;
-
+  background-size: cover 0;
+}
+.weight-program__cover{
+  margin: 0 auto;
+  width: 320px;
 }
 
 .weight-program__tag{
@@ -44,7 +46,7 @@
 }
 
 .weight-program__slogan-image{
-  margin: 29px 0 1px 120px;
+  margin: 29px 0 1px 20px;
 }
 
 .weight-program__slogan-tablet,
@@ -63,7 +65,7 @@
   text-transform: uppercase;
   color: $second-color;
   background-color: $primary-color;
-  margin: 0 0 22px 120px;
+  margin: 0 0 22px 20px;
   padding: 0;
 }
 .weight-program__slim-cat--desktop{
