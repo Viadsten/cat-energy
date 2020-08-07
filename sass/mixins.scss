@@ -40,3 +40,30 @@ $description-color: #444444;
   text-align: left;
   color: #000;
 }
+
+@mixin links--HF{
+  &:hover{
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}
+
+@mixin green-button--HF{
+  &:hover{
+    background-color: #5eaa2f;
+  }
+  &:active{
+    color: #8fc46e;
+  }
+}
+
+@mixin green-icons--HF{
+  &:hover{
+    color: #68b738;
+  }
+  &:active{
+    color: #c8e0ba;
+  }
+}

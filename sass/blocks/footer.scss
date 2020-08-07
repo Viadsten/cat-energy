@@ -36,27 +36,23 @@
 
 .page-footer__developer{
   padding: 40px 0 40px 0;
+  cursor: pointer;
   font-size: 16px;
+  @include green-icons--HF;
 }
 
 @media (min-width: $tablet-width){
   .footer__line{
     display: none;
   }
-  .page-footer--wide{
-    width: 100vw;
-    margin-left: calc((100vw - 768px) / -2);
-    background-color: $third-color;
-  }
-  .page-footer{
+
+  .page-footer--cover{
     align-items: center;
     width: 708px;
     margin-top: -2px;
-    padding: 35px 30px;
+    padding: 25px 30px;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin-left: calc((100vw - 768px) / 2);
+    justify-content: space-between;
   }
 
   .footer-logo{
@@ -66,16 +62,27 @@
     width: 125px;
     margin-left: 75px;
   }
+
+  .page-footer__developer{
+    line-height: 18px;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: $desktop-width){
   .social__list{
     margin-left: 405px;
   }
-  .page-footer--wide{
-    margin-left: calc((100vw - 1440px) / -2);
+
+  .social__list{
+    margin: 0;
   }
-  .page-footer{
-    margin-left: calc((100vw - 1440px) / 2);
+  .page-footer--cover{
+    align-items: center;
+    width: 1220px;
+    margin-top: -2px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
   }
 }

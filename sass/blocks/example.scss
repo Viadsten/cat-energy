@@ -1,15 +1,16 @@
 @import "../mixins.scss";
 
-.example--wide{
+.example{
   width: 100%;
   background-color: $third-color;
+  height: 706px;
 }
 
-.example{
-  width: 320px;
-  height: 637px;
+.example__list-container{
+  width: 280px;
+  height: 320px;
+  padding: 29px 0 39px 0;
   margin: 0 auto;
-  padding: 29px 20px 39px 20px;
 }
 
 .example__title{
@@ -58,6 +59,8 @@
 }
 
 .example-cat{
+  margin: 0 auto;
+  width: 320px;
   height: 330px;
 }
 
@@ -81,6 +84,7 @@
 }
 
 .example-cat__img--before{
+  transition: 0.15s;
   position: absolute;
   margin: 0 0 33px 0;
   width: 311px;
@@ -88,8 +92,9 @@
 }
 
 .example-cat__img--after{
+  transition: 0.15s;
   position: absolute;
-  margin: -15px 0 33px 23px;
+  margin: -15px 0 33px 43px;
   display: none;
   width: 251px;
   height: 240px;
@@ -99,10 +104,13 @@
 .example-cat__button--before{
   @include example-cat__button;
   margin-right: 4px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .example-cat__button--after{
   @include example-cat__button;
+  cursor: pointer;
 }
 
 .example-cat__out-selector{
@@ -114,6 +122,7 @@
 }
 
 .example-cat__in-selector--before{
+  transition: 0.3s;
   width: 35px;
   height: 6px;
   border: none;
@@ -123,15 +132,20 @@
 }
 
 .example-cat__in-selector--after{
-  margin-left: 37px;
+  transition: 0.3s;
+  margin-left: 40px;
 }
 
 @media (min-width: $tablet-width){
   .example{
-    background-color: $second-color;
-    padding: 15px 30px 0 30px;
+    background-color: rgba($color: #fff, $alpha: 0);
   }
 
+  .example__list-container{
+    padding-top: 15px;
+    width: 708px;
+    height: 540px;
+  }
   .example__title{
     @include header--tablet;
   }
@@ -142,14 +156,7 @@
     margin-top: 64px;
   }
 
-  .example__list-container{
-    display: flex;
-    justify-content: space-between;
-    height: 230px;
-  }
-
   .example__list{
-    justify-content: flex-start;
     width: 408px;
     margin-top: 53px;
   }
@@ -181,21 +188,30 @@
     width: auto;
   }
 
+  .example__image-cell{
+    margin-top: -58px;
+  }
+
   .example__number{
     text-transform: uppercase;
     font-size: 30px;
     font-weight: normal;
     line-height: 37px;
   }
-
-  .example__image-cell{
-    margin-top: -58px;
+  .example__list-cost--tablet{
+    display: flex;
+    justify-content: space-between;
   }
 
-  .example-cat{
-    margin: 150px -30px 0 -30px;
-    height: 460px;
+  .example-cat--cover{
+    width: 100%;
     background-color: $third-color;
+  }
+  .example-cat{
+    margin: 0 auto;
+    width: 708px;
+    height: 460px;
+
   }
   .example-cat__img--before{
     margin: -153px 0 33px 45px;
@@ -208,7 +224,6 @@
     display: none;
     width: 545px;
     height: 517px;
-
   }
 
   .example-cat__selector{
@@ -218,18 +233,22 @@
 
 @media (min-width: $desktop-width){
 
-  .example__title, .example__description{
-    margin-left: 80px;
+  .example{
+    margin-top: 20px;
+  }
+
+  .example__title{
+    margin-top: -20px;
   }
 
   .example__list-container{
     display: block;
-    margin-left: 80px;
+    width: 1220px;
   }
 
   .example-cat{
   margin-top: -464px;
-  padding-left: 635px;
+  padding-left: 580px;
   }
 
   .example-cat__selector{
@@ -238,7 +257,7 @@
   .example__description{
     margin-top: 146px;
     width: 435px;
-    margin-bottom: 67px;
+    margin-bottom: 15px;
   }
   .example__cost{
     display: none;
@@ -249,8 +268,8 @@
     text-transform: uppercase;
     font-size: 20px;
     line-height: 27px;
-    width: 330px;
-    margin-top: 62px;
+    width: 327px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
   }

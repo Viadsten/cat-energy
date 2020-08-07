@@ -5,26 +5,63 @@ var before__image = document.querySelector(".example-cat__img--before");
 var after__image = document.querySelector(".example-cat__img--after");
 var navToggle = document.querySelector(".main-nav__toggle");
 var mainNav = document.querySelector(".main-nav");
+var catSelector = document.querySelector(".example-cat__in-selector--before");
+let after_count = 0, before_count = 1;
 
+
+$(window).resize(function() {
+  if(document.documentElement.clientWidth > 767) {
+    mainNav.style.display = "block";
+  }
+});
+
+$(window).resize(function() {
+  if(document.documentElement.clientWidth < 767) {
+    mainNav.style.display = "none";
+  }
+});
+/*
 after__button.onclick = function() {
-  after__image.style.display = "block";
-  before__image.style.display = "none";
+  if(before_count == 1){
+    after__image.style.display = "block";
+    before__image.style.display = "none";
+    $('#cat-selector').css('margin-left', '+=35px');
+    before_count -= 1;
+    after_count += 1;
+  }
 };
 
 before__button.onclick = function() {
-  before__image.style.display = "block";
-  after__image.style.display = "none";
+  if(before_count == 0){
+    before__image.style.display = "block";
+    after__image.style.display = "none";
+    $('#cat-selector').css('margin-left', '-=35px');
+    before_count += 1;
+    after_count -= 1;
+  }
 };
-
+*/
 
 navToggle.addEventListener('click', function(){
   if (navToggle.classList.contains('main-nav__toggle--after'))
   {
     navToggle.classList.remove('main-nav__toggle--after');
-    mainNav.classList.add('visually-hidden')
+    mainNav.style.display = "none";
   }
   else{
     navToggle.classList.add('main-nav__toggle--after');
-    mainNav.classList.remove('visually-hidden')
+    mainNav.style.display = "block";
   }
 });
+
+after__button.addEventListener('click', function(){
+  before__image.style.display = "none";
+  after__image.style.display = "block";
+  catSelector.classList.add("example-cat__in-selector--after");
+})
+
+before__button.addEventListener('click', function(){
+  after__image.style.display = "none";
+  before__image.style.display = "block";
+  catSelector.classList.remove("example-cat__in-selector--after");
+})

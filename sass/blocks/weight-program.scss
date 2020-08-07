@@ -1,11 +1,6 @@
 @import "../mixins.scss";
 @import "../fonts.scss";
 
-.weight-program__container{
-  width: 320px;
-  margin: 0 auto;
-}
-
 .weight-program__header{
   width: 100%;
   margin: 0 auto;
@@ -13,10 +8,15 @@
   margin-bottom: 22px;
 
 }
+
+.weight-program__container{
+  width: 320px;
+  margin: 0 auto;
+}
+
 .weight-program__background{
   background-color: #65a93c;
   height: 305px;
-
   background-image: url('../img/index-background-mobile.jpg');
   background-position: center 0;
   background-repeat: no-repeat;
@@ -67,6 +67,7 @@
   background-color: $primary-color;
   margin: 0 0 22px 20px;
   padding: 0;
+  @include green-button--HF;
 }
 .weight-program__slim-cat--desktop{
   display: none;
@@ -133,14 +134,23 @@
 @media (min-width: $tablet-width){
   .weight-program{
     width: auto;
+    margin: 0 auto;
   }
 
   .weight-program__header{
-    width: 570px;
-    margin-top: 3px;
-    margin-left: 118px;
     background-image: none;
-    height: 807px;
+    height: 810px;
+  }
+
+  .weight-program__cover{
+    width: 530px;
+    margin: left;
+    padding-top: 5px;
+  }
+
+  .weight-program__background{
+    background-color: rgba($color: #fff, $alpha: 0);
+    background-image: none;
   }
 
   .weight-program__tag{
@@ -153,6 +163,7 @@
     line-height: 20px;
     color: #000;
     padding: 0px;
+    text-align: left;
   }
 
   .weight-program__slogan-image{
@@ -175,6 +186,11 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+  }
+
+  .weight-program__container{
+    width: 765px;
+    margin: 0 auto;
   }
 
   .weight-program__section{
@@ -237,9 +253,14 @@
 
 @media (min-width: $desktop-width){
   .weight-program__header{
-    margin-top: -502px;
-    margin-left: 190px;
+    margin-top: -505px;
     height: 552px;
+  }
+
+  .weight-program__cover{
+    width: 1060px;
+    margin: left;
+    padding-top: 5px;
   }
 
   .weight-program__slogan-tablet,
@@ -247,17 +268,16 @@
     display: none;
   }
   .weight-program__container{
+    width: 1220px;
     display: flex;
     justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px;
   }
 
   .weight-program__slogan-desktop{
     display: block;
     position: absolute;
     margin-left: 370px;
-    margin-top: -360px;
+    margin-top: -365px;
   }
 
   .weight-program__button{
@@ -265,6 +285,7 @@
   }
 
   .weight-program__section{
+    margin: 10px 0 0 0;
     width: 570px;
     height: 372px;
   }

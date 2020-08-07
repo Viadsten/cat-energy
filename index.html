@@ -8,35 +8,37 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <title>Cat energy</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     </head>
     <body>
+        <span class="page-header__background--desktop"></span>
         <header class="page-header">
           <div class="page-header__main">
-          <a class="page-header__logo-link">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" heigh="38" alt="Cat energy">
-            <img class="page-header__logo-tablet" src="img/logo-tablet.svg" width="173" heigh="58" alt="Cat energy">
-            <img class="page-header__logo-desktop" src="img/logo-desktop.svg" width="202" heigh="59" alt="Cat energy">
-          </a>
-          <button class="main-nav__toggle" type="button"></button>
-        </div>
-            <nav class="main-nav visually-hidden">
-                <div class="main-nav__wrapper ">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                          <hr class="main-nav__line">
-                          <a href="index.html" class="main-nav__link">Главная</a>
-                          <hr class="main-nav__active-line">
-                        </li>
-                        <li class="site-list__item">
-                          <hr class="main-nav__line">
-                          <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
-                        </li>
-                        <li class="site-list__item">
-                          <hr class="main-nav__line">
-                          <a href="program.html" class="main-nav__link">Подбор программы</a>
-                        </li>
-                    </ul>
-                </div>
+            <a class="page-header__logo-link">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" heigh="38" alt="Cat energy">
+              <img class="page-header__logo-tablet" src="img/logo-tablet.svg" width="173" heigh="58" alt="Cat energy">
+              <img class="page-header__logo-desktop" src="img/logo-desktop.svg" width="202" heigh="59" alt="Cat energy">
+            </a>
+            <button class="main-nav__toggle" type="button"></button>
+          </div>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                      <hr class="main-nav__line">
+                      <a href="index.html" class="main-nav__link">Главная</a>
+                      <hr class="main-nav__active-line">
+                    </li>
+                    <li class="site-list__item">
+                      <hr class="main-nav__line">
+                      <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+                    </li>
+                    <li class="site-list__item">
+                      <hr class="main-nav__line">
+                      <a href="program.html" class="main-nav__link">Подбор программы</a>
+                    </li>
+                </ul>
+              </div>
             </nav>
         </header>
         <main class="page-main">
@@ -44,52 +46,52 @@
             <section class="weight-program">
                 <header class="weight-program__header">
                   <figure class="weight-program__background">
-                  <div class="weight-program__cover">
-                    <h2 class="weight-program__tag">Функциональное<br>питание для котов</h2>
-                    <p class="weight-program__slogan">Занялся собой? Займись котом!</p>
-                    <img class="weight-program__slogan-image" src="img/chiken-product-mobile.png" width="280" height="270" alt="Cat energy со вкусом курицы">
-                    <button class="weight-program__button" type="button">Подобрать программу</button>
-                    <img class="weight-program__slogan-tablet" src="img/chiken-product-tablet.jpg" width="709" height="609">
-                    <img class="weight-program__slogan-desktop" src="img/chiken-product-desktop.png" width="552" height="499">
-                  </div>
-                </figure>
+                    <div class="weight-program__cover">
+                      <h2 class="weight-program__tag">Функциональное<br>питание для котов</h2>
+                      <p class="weight-program__slogan">Занялся собой? Займись котом!</p>
+                      <img class="weight-program__slogan-image" src="img/chiken-product-mobile.png" width="280" height="270" alt="Cat energy со вкусом курицы">
+                      <button class="weight-program__button" type="button">Подобрать программу</button>
+                      <img class="weight-program__slogan-tablet" src="img/chiken-product-tablet.jpg" width="709" height="609">
+                      <img class="weight-program__slogan-desktop" src="img/chiken-product-desktop.png" width="552" height="499">
+                    </div>
+                  </figure>
                 </header>
                 <div class="weight-program__container">
-                <div class="weight-program__section">
-                  <div class="weight-program__tablet-container">
-                    <div class="weight-program__name-container">
-                      <img src="img/slim-cat-desktop.png" class="weight-program__slim-cat--desktop" width="100" height="106">
-                      <img src="img/slim-cat-mobile.png" class="weight-program__slim-cat--mobile" width="50" height="53">
-                      <h3 class="weight-program__name">Похудение</h3>
+                  <div class="weight-program__section">
+                    <div class="weight-program__tablet-container">
+                      <div class="weight-program__name-container">
+                        <img src="img/slim-cat-desktop.png" class="weight-program__slim-cat--desktop" width="100" height="106">
+                        <img src="img/slim-cat-mobile.png" class="weight-program__slim-cat--mobile" width="50" height="53">
+                        <h3 class="weight-program__name">Похудение</h3>
+                      </div>
+                      <p class="weight-program__description">Ваш кот весит больше собаки и
+                      почти утратил способность лазить по деревьям? Пора на диету! Cat
+                      Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                      <hr class="weight-program__line">
+                      <a href="#" class="weight-program__catalog-button" alt="Каталог Slim">
+                          Каталог Slim <img src="img/right-arrow-mobile.png" class="weight-program__arrow" height="11" width="24">
+                      </a>
                     </div>
-                    <p class="weight-program__description">Ваш кот весит больше собаки и
-                    почти утратил способность лазить по деревьям? Пора на диету! Cat
-                    Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                    <hr class="weight-program__line">
-                    <a href="#" class="weight-program__catalog-button" alt="Каталог Slim">
-                        Каталог Slim <img src="img/right-arrow-mobile.png" class="weight-program__arrow" height="11" width="24">
-                    </a>
+                    <img src="img/slim-cat-tablet.svg" class="weight-program__slim-cat--tablet" width="200" height="212">
                   </div>
-                  <img src="img/slim-cat-tablet.svg" class="weight-program__slim-cat--tablet" width="200" height="212">
-                </div>
-                <div class="weight-program__section">
-                  <div class="weight-program__tablet-container">
-                    <div class="weight-program__name-container icon-powerfulcat">
-                      <img src="img/powerful-cat-desktop.png" class="weight-program__prfl-cat--desktop" width="134" height="100">
-                      <img src="img/powerful-cat-mobile.png" class="weight-program__prfl-cat" width="67" height="50">
-                      <h3 class="weight-program__name name-powerfulcat">Набор массы</h3>
-                    </div>
-                    <p class="weight-program__description weight-program__description--prfl-cat">Заработать авторитет среди
-                    дворовых котов и даже собак? Серия Cat Energy Pro поможет
-                    вашему коту нарастить необходимые мышцы!</p>
-                    <hr class="weight-program__line">
-                    <a href="#" class="weight-program__catalog-button" alt="Каталог Pro">
-                        Каталог Pro <img src="img/right-arrow-mobile.png" class="weight-program__arrow" height="11" width="24">
-                    </a>
-                    </div>
-                    <img src="img/powerful-cat-tablet.svg" class="weight-program__slim-cat--tablet" width="268" height="200">
-                </div>
-              </div>
+                  <div class="weight-program__section">
+                    <div class="weight-program__tablet-container">
+                      <div class="weight-program__name-container icon-powerfulcat">
+                        <img src="img/powerful-cat-desktop.png" class="weight-program__prfl-cat--desktop" width="134" height="100">
+                        <img src="img/powerful-cat-mobile.png" class="weight-program__prfl-cat" width="67" height="50">
+                        <h3 class="weight-program__name name-powerfulcat">Набор массы</h3>
+                      </div>
+                      <p class="weight-program__description weight-program__description--prfl-cat">Заработать авторитет среди
+                      дворовых котов и даже собак? Серия Cat Energy Pro поможет
+                      вашему коту нарастить необходимые мышцы!</p>
+                      <hr class="weight-program__line">
+                      <a href="#" class="weight-program__catalog-button" alt="Каталог Pro">
+                          Каталог Pro <img src="img/right-arrow-mobile.png" class="weight-program__arrow" height="11" width="24">
+                      </a>
+                      </div>
+                      <img src="img/powerful-cat-tablet.svg" class="weight-program__slim-cat--tablet" width="268" height="200">
+                  </div>
+               </div>
             </section>
             <section class="advantages">
                 <h2 class="advantages__title">Как это работает</h2>
@@ -120,37 +122,38 @@
                     </li>
                 </ul>
             </section>
-            <section class="example--wide">
-            <div class="example">
-                <h2 class="example__title">Живой пример</h2>
-                <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто
-                заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-                изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-                спит по 16 часов в день.</p>
+            <section class="example">
                 <div class="example__list-container">
-                  <ul class="example__list">
-                      <li class="example__item">
-                        <img src="img/weight-back.png" class="example__border" width="124" height="56">
-                        <div class="example__image-cell">
-                          <b class="example__number">5 кг</b>
-                          <p class="example__text">снижение веса</p>
+                  <h2 class="example__title">Живой пример</h2>
+                  <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто
+                  заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+                  изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+                  спит по 16 часов в день.</p>
+                  <div class="example__list-cost--tablet">
+                    <ul class="example__list">
+                        <li class="example__item">
+                          <img src="img/weight-back.png" class="example__border" width="124" height="56">
+                          <div class="example__image-cell">
+                            <b class="example__number">5 кг</b>
+                            <p class="example__text">снижение веса</p>
+                          </div>
+                        </li>
+                        <li class="example__item">
+                          <img src="img/weight-back.png" class="example__border" width="124" height="56">
+                          <div class="example__image-cell">
+                            <b class="example__number">60 дней</b>
+                            <p class="example__text">затрачено времени</p>
                         </div>
-                      </li>
-                      <li class="example__item">
-                        <img src="img/weight-back.png" class="example__border" width="124" height="56">
-                        <div class="example__image-cell">
-                          <b class="example__number">60 дней</b>
-                          <p class="example__text">затрачено времени</p>
-                      </div>
-                      </li>
-                  </ul>
-                  <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+                        </li>
+                    </ul>
+                    <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+                  </div>
                   <div class="example__cost--desktop">
                     <p>Затраты на питание:</p>
                     <p>15 000 руб.</p>
                   </div>
                 </div>
-                <div class="example-cat--wide">
+                <div class="example-cat--cover">
                   <div class="example-cat">
                     <img src="img/before-desktop.svg" class="example-cat__img--before">
                     <img src="img/after-desktop.svg" class="example-cat__img--after">
@@ -163,8 +166,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-          </section>
+            </section>
             <section class="contacts">
               <div class="contacts__adress">
                 <b class="contacts__text">Приглашаем<br>к сотрудничеству<br>дилеров!</b>
