@@ -20,27 +20,6 @@ $(window).resize(function() {
     mainNav.style.display = "none";
   }
 });
-/*
-after__button.onclick = function() {
-  if(before_count == 1){
-    after__image.style.display = "block";
-    before__image.style.display = "none";
-    $('#cat-selector').css('margin-left', '+=35px');
-    before_count -= 1;
-    after_count += 1;
-  }
-};
-
-before__button.onclick = function() {
-  if(before_count == 0){
-    before__image.style.display = "block";
-    after__image.style.display = "none";
-    $('#cat-selector').css('margin-left', '-=35px');
-    before_count += 1;
-    after_count -= 1;
-  }
-};
-*/
 
 navToggle.addEventListener('click', function(){
   if (navToggle.classList.contains('main-nav__toggle--after'))

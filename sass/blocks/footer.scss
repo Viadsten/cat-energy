@@ -7,6 +7,11 @@
 
 }
 
+.social__link{
+  fill: #666;
+  @include green-footer-icons--HF;
+}
+
 .page-footer--cover{
   margin: 0 auto;
   text-align: center;
@@ -14,19 +19,22 @@
 
 .footer-logo{
   width: 129px;
-  margin: 40px 0 40px 0;
+  margin: 38px 0 30px 0;
 }
 
 .social__list{
   margin: 0 auto;
   width: 125px;
-  padding: 23px 0 23px 0;
+  padding: 20px 10px 20px 0;
   display: flex;
   justify-content: space-between;
   list-style: none;
   align-items: center;
 }
 
+.social__list>*:first-child{
+  margin-top: -3px;
+}
 .footer__line{
   background-color: #d9d9d9;
   width: 100%;
@@ -35,7 +43,7 @@
 }
 
 .page-footer__developer{
-  padding: 40px 0 40px 0;
+  padding: 30px 0 30px 0;
   cursor: pointer;
   font-size: 16px;
   @include green-icons--HF;
@@ -60,9 +68,24 @@
   }
   .social__list{
     width: 125px;
-    margin-left: 75px;
+    padding-right: 0;
+    padding-left: 50px;
   }
 
+  .social__link--vk{
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram{
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook{
+    width: 14px;
+    height: 28px;
+  }
   .page-footer__developer{
     line-height: 18px;
     font-size: 18px;
@@ -84,5 +107,9 @@
     padding: 25px 30px;
     display: flex;
     justify-content: space-between;
+  }
+  .page-footer__developer{
+    font-size: 22px;
+    line-height: 22px;
   }
 }

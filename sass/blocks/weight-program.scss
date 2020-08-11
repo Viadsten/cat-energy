@@ -6,7 +6,6 @@
   margin: 0 auto;
   height: 480px;
   margin-bottom: 22px;
-
 }
 
 .weight-program__container{
@@ -18,13 +17,19 @@
   background-color: #65a93c;
   height: 305px;
   background-image: url('../img/index-background-mobile.jpg');
-  background-position: center 0;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    background-image: url('../img/index-background-mobile--x2.jpg');
+    background-size: 305px;
+  }
+   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover 0;
 }
 .weight-program__cover{
   margin: 0 auto;
   width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .weight-program__tag{
@@ -46,16 +51,18 @@
 }
 
 .weight-program__slogan-image{
-  margin: 29px 0 1px 20px;
+  width: 300px;
+  height: 270px;
+  margin: 15px 0 17px 0;
+  order: 1;
 }
 
-.weight-program__slogan-tablet,
-.weight-program__slogan-desktop,
 .weight-program__prfl-cat--desktop{
   display: none;
 }
 
 .weight-program__button{
+  order: 2;
   align-items: center;
   width: 280px;
   height: 40px;
@@ -167,16 +174,13 @@
   }
 
   .weight-program__slogan-image{
-    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+    margin: 113px 0 0 -45px;
   }
 
-  .weight-program__slogan-tablet{
-    display: block;
-    position: absolute;
-    margin-left: -88px;
-    margin-top: -80px;
-    z-index: -1;
-  }
 
   .weight-program__button{
     margin: 48px 0 0 0;
@@ -273,13 +277,12 @@
     justify-content: space-between;
   }
 
-  .weight-program__slogan-desktop{
-    display: block;
-    position: absolute;
-    margin-left: 370px;
-    margin-top: -365px;
+  .weight-program__slogan-image{
+    width: 552px;
+    height: 499px;
+    margin: -27px 0 0 185px;
+    z-index: 1;
   }
-
   .weight-program__button{
     margin-top: 53px;
   }

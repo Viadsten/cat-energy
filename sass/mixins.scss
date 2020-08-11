@@ -67,3 +67,12 @@ $description-color: #444444;
     color: #c8e0ba;
   }
 }
+
+@mixin green-footer-icons--HF{
+  &:hover{
+    fill: #5eaa2f;
+  }
+  &:active{
+    fill: #8fc46e;
+  }
+}
