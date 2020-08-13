@@ -136,6 +136,10 @@
   margin-left: 40px;
 }
 
+.img-comp-container, .example-cat__line{
+  display: none;
+}
+
 @media (min-width: $tablet-width){
   .example{
     background-color: rgba($color: #fff, $alpha: 0);
@@ -213,21 +217,9 @@
     height: 460px;
 
   }
-  .example-cat__img--before{
-    margin: -153px 0 33px 45px;
-    width: 677px;
-    height: 499px;
-  }
-
-  .example-cat__img--after{
-    margin: -168px 0 33px 110px;
-    display: none;
-    width: 545px;
-    height: 517px;
-  }
 
   .example-cat__selector{
-    padding: 350px 44px 0 44px;
+    display: none;
   }
 }
 
@@ -251,10 +243,6 @@
     padding-left: 500px;
   }
 
-  .example-cat__selector{
-    width: 570px;
-
-  }
   .example__description{
     margin-top: 146px;
     width: 435px;

@@ -58,7 +58,8 @@
   }
 
   .contacts__adress{
-    margin: -20px 0 0 110px;
+    margin: 0;
+    margin-left: calc(50vw - 610px);
     padding: 0;
     position: absolute;
     width: 570px;

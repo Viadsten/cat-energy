@@ -44,8 +44,14 @@
 
 .page-footer__developer{
   padding: 30px 0 30px 0;
-  cursor: pointer;
   font-size: 16px;
+}
+
+.page-footer__developer-link{
+  text-decoration: none;
+  &:visited{
+    color: black;
+  }
   @include green-icons--HF;
 }
 
@@ -70,6 +76,10 @@
     width: 125px;
     padding-right: 0;
     padding-left: 50px;
+  }
+
+  .social__list>*:first-child{
+    margin-top: 0;
   }
 
   .social__link--vk{

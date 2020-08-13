@@ -38,21 +38,41 @@
   vertical-align:top;
   width: 24px;
   height: 18px;
+  cursor: pointer;
+  position: relative;
   margin-top: 26px;
-  border: none;
-  background-image: url('../img/mobile-menu.png');
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: $second-color;
 }
 
-.main-nav__toggle--after{
-  background-image: url('../img/mobile-menu--close.png');
-  width: 18px;
-  height: 18px;
-  margin-top: 26px;
-  margin-left: 3px;
-  margin-right: 3px;
+.toggle__line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  transition: .3s all linear;
+}
+.toggle__line_first{
+  top: 0;
+}
+
+.toggle__line_second, .toggle__line_third{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.toggle__line_fourth{
+  bottom: 0;
+}
+
+.toggle_active .toggle__line_first, .toggle_active .toggle__line_fourth{
+  opacity: 0;
+}
+.toggle_active .toggle__line_second{
+  transform: translateY(-50%) rotate(45deg);
+}
+.toggle_active .toggle__line_third{
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .main-nav__list{
