@@ -61,7 +61,7 @@ $description-color: #444444;
 
 @mixin green-icons--HF{
   &:hover{
-    color: #68b738;
+    color: $primary-color;
   }
   &:active{
     color: #c8e0ba;

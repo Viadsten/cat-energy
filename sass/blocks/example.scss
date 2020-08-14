@@ -106,11 +106,13 @@
   margin-right: 4px;
   transition: 0.3s;
   cursor: pointer;
+  background-color: $third-color;
 }
 
 .example-cat__button--after{
   @include example-cat__button;
   cursor: pointer;
+  background-color: $third-color;
 }
 
 .example-cat__out-selector{
