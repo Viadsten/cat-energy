@@ -1,0 +1,22 @@
+@import "../mixins.scss";
+
+.active-line--catalog{
+  width: 170px;
+}
+
+@media (min-width: $tablet-width){
+  .active-line--catalog{
+    width: 152px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .active-line--catalog{
+    width: 170px;
+    background-color: $primary-color;
+  }
+
+  .main-nav__link--catalog{
+    color: black;
+  }
+}

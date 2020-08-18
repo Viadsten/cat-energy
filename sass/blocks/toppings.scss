@@ -1,0 +1,127 @@
+@import "../mixins.scss";
+
+.toppings{
+  margin-top: 42px;
+}
+
+.toppings__card{
+  width: 280px;
+  margin: 0 auto;
+}
+
+.toppings__header{
+  font-weight: normal;
+  width: 250px;
+  margin-left: calc(50vw - 140px);
+  margin-top: -16px;
+  background-color: white;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.toppings__green-line{
+  margin-left: calc(50vw + 110px);
+  height: 3px;
+  background-color: $primary-color;
+  border: none;
+}
+
+.toppings__line{
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 1px;
+  border: none;
+  margin: 14px 0 12px 0;
+}
+
+.toppings__table{
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.table__header--toppings{
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 120px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.table__text--toppings{
+  font-size: 14px;
+}
+
+.toppings__offer{
+  width: 280px;
+  height: 289px;
+ // background-color: $primary-color;
+ // background-image: ;
+}
+
+@media (min-width: $tablet-width){
+  .toppings{
+    margin-top: -53px;
+  }
+
+  .toppings__line{
+    display: none;
+  }
+
+  .toppings__card{
+    width: 633px;
+    border: 1px solid #d9d9d9;
+    padding: 27px 38px 27px 38px;
+    margin-bottom: -1px;
+  }
+
+  .toppings__header{
+    width: 375px;
+    padding-left: 40px;
+    margin-left: calc(50vw - 354px);
+    margin-top: -25px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  .toppings__green-line{
+   margin-left: 0;
+   // height: 3px;
+   // background-color: $primary-color;
+    //border: none;
+  }
+
+  .toppings__line{
+    //!margin: 14px 0 12px 0;
+  }
+
+  .toppings__table{
+    width: 633px;
+    display: flex;
+    justify-content: space-between;
+    //!margin-bottom: 14px;
+  }
+
+  .table__header--toppings{
+    font-size: 20px;
+    line-height: 20px;
+    width: 150px;
+  }
+
+  .table__text--toppings{
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .table__second-column{
+    width: 95px;
+  }
+
+  .purchase-button--toppings{
+    margin-left: 0;
+    width: 633px;
+    margin-top: 0;
+  }
+}

@@ -1,3 +1,4 @@
+//index
 @import "blocks/main-nav.scss";
 @import "blocks/weight-program.scss";
 @import "blocks/advantages.scss";
@@ -8,6 +9,10 @@
 @import "fonts.scss";
 @import "scaffolding.scss";
 @import "blocks/cat-slider.scss";
+//catalog
+@import "blocks/catalog-nav.scss";
+@import "blocks/goods.scss";
+@import "blocks/toppings.scss";
 
 *{
   margin: 0;
