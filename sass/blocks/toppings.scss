@@ -2,6 +2,7 @@
 
 .toppings{
   margin-top: 42px;
+  margin-bottom: 35px;
 }
 
 .toppings__card{
@@ -53,16 +54,40 @@
   font-size: 14px;
 }
 
-.toppings__offer{
+.toppings__gift{
+  margin: 0 auto;
+  margin-top: 27px;
   width: 280px;
   height: 289px;
- // background-color: $primary-color;
- // background-image: ;
+  background-color: $primary-color;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gift__image{
+  fill: white;
+  margin: 65px 0 65px 0;
+}
+
+.gift__text{
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contacts--catalog{
+  width: 100%;
+  background-color: $third-color;
 }
 
 @media (min-width: $tablet-width){
+
   .toppings{
     margin-top: -53px;
+    margin-bottom: 75px;
   }
 
   .toppings__line{
@@ -88,20 +113,12 @@
 
   .toppings__green-line{
    margin-left: 0;
-   // height: 3px;
-   // background-color: $primary-color;
-    //border: none;
-  }
-
-  .toppings__line{
-    //!margin: 14px 0 12px 0;
   }
 
   .toppings__table{
     width: 633px;
     display: flex;
     justify-content: space-between;
-    //!margin-bottom: 14px;
   }
 
   .table__header--toppings{
@@ -123,5 +140,111 @@
     margin-left: 0;
     width: 633px;
     margin-top: 0;
+  }
+
+  .toppings__gift{
+    margin-top: 69px;
+    width: 478px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 115px 0 115px;
+  }
+
+  .gift__image{
+    fill: white;
+    margin: 65px 0 75px 0;
+  }
+
+  .gift__text{
+    text-align: left;
+  }
+
+  .contacts--catalog{
+    margin-top: 0;
+    padding-top: 40px;
+    margin-bottom: 80px;
+  }
+
+}
+
+@media (min-width: $desktop-width){
+  .toppings{
+    margin-top: -43px;
+    margin-bottom: 45px;
+  }
+
+  .toppings__header{
+    margin-left: calc(50vw - 650px);
+  }
+
+  .toppings__wrapper{
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card__wrapper{
+    width: 895px;
+  }
+
+  .toppings__line{
+    display: block;
+    width: 895px;
+    margin: 0;
+  }
+
+  .toppings__card{
+    width: 895px;
+    border: none;
+    padding: 15px 0 16px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .toppings__table{
+    width: 610px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .purchase-button--toppings{
+    width: 245px;
+    height: 40px;
+  }
+
+  .toppings__gift{
+    width: 245px;
+    height: 289px;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/gift-photo-desktop.jpg");
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .gift__image{
+    margin: 65px 0 65px 0;
+  }
+
+  .gift__text{
+    text-align: center;
+  }
+
+  .contacts--catalog{
+    background-color: white;
+    margin-bottom: 0;
+  }
+
+  .contacts__map--catalog{
+    margin-top:  0;
+  }
+
+  .contacts__adress--catalog{
+    top: 2080px;
   }
 }

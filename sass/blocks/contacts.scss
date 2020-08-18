@@ -1,7 +1,7 @@
 @import "../mixins.scss";
 
 .contacts__adress{
-  width: 320px;
+  width: 280px;
   height: 57px;
   padding: 28px 25px 29px 19px;
   display: flex;
@@ -14,14 +14,13 @@
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
-  width: 125px;
+
 }
 
 .contacts__adress-text{
   @include description;
   line-height: 20px;
-  width: 135px;
-  text-align: right;
+  text-align: left;
 }
 
 .contacts__map{
@@ -46,9 +45,11 @@
 
   .contacts__adress-text{
     margin-top: 7px;
+    text-align: right;
   }
   .contacts__map{
     height: 400px;
+    margin-bottom: -1px;
   }
 }
 

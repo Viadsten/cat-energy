@@ -821,7 +821,7 @@ input, button {
     justify-content: space-between; } }
 
 .contacts__adress {
-  width: 320px;
+  width: 280px;
   height: 57px;
   padding: 28px 25px 29px 19px;
   display: flex;
@@ -832,8 +832,7 @@ input, button {
   line-height: 20px;
   font-size: 16px;
   font-weight: normal;
-  text-transform: uppercase;
-  width: 125px; }
+  text-transform: uppercase; }
 
 .contacts__adress-text {
   font-family: 'Arial';
@@ -841,8 +840,7 @@ input, button {
   line-height: 18px;
   color: #444444;
   line-height: 20px;
-  width: 135px;
-  text-align: right; }
+  text-align: left; }
 
 .contacts__map {
   width: 100%; }
@@ -859,9 +857,11 @@ input, button {
     line-height: 25px;
     font-size: 20px; }
   .contacts__adress-text {
-    margin-top: 7px; }
+    margin-top: 7px;
+    text-align: right; }
   .contacts__map {
-    height: 400px; } }
+    height: 400px;
+    margin-bottom: -1px; } }
 
 @media (min-width: 1280px) {
   .contacts {
@@ -1333,12 +1333,13 @@ input, button {
     margin-left: 38px;
     margin-top: 23px; }
   .goods__more {
-    width: 245px; }
+    width: 243px; }
   .more__button {
     width: 170px; } }
 
 .toppings {
-  margin-top: 42px; }
+  margin-top: 42px;
+  margin-bottom: 35px; }
 
 .toppings__card {
   width: 280px;
@@ -1382,13 +1383,36 @@ input, button {
 .table__text--toppings {
   font-size: 14px; }
 
-.toppings__offer {
+.toppings__gift {
+  margin: 0 auto;
+  margin-top: 27px;
   width: 280px;
-  height: 289px; }
+  height: 289px;
+  background-color: #68b738;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.gift__image {
+  fill: white;
+  margin: 65px 0 65px 0; }
+
+.gift__text {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.contacts--catalog {
+  width: 100%;
+  background-color: #f2f2f2; }
 
 @media (min-width: 768px) {
   .toppings {
-    margin-top: -53px; }
+    margin-top: -53px;
+    margin-bottom: 75px; }
   .toppings__line {
     display: none; }
   .toppings__card {
@@ -1422,7 +1446,76 @@ input, button {
   .purchase-button--toppings {
     margin-left: 0;
     width: 633px;
-    margin-top: 0; } }
+    margin-top: 0; }
+  .toppings__gift {
+    margin-top: 69px;
+    width: 478px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 115px 0 115px; }
+  .gift__image {
+    fill: white;
+    margin: 65px 0 75px 0; }
+  .gift__text {
+    text-align: left; }
+  .contacts--catalog {
+    margin-top: 0;
+    padding-top: 40px;
+    margin-bottom: 80px; } }
+
+@media (min-width: 1280px) {
+  .toppings {
+    margin-top: -43px;
+    margin-bottom: 45px; }
+  .toppings__header {
+    margin-left: calc(50vw - 650px); }
+  .toppings__wrapper {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between; }
+  .card__wrapper {
+    width: 895px; }
+  .toppings__line {
+    display: block;
+    width: 895px;
+    margin: 0; }
+  .toppings__card {
+    width: 895px;
+    border: none;
+    padding: 15px 0 16px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; }
+  .toppings__table {
+    width: 610px;
+    margin: 0;
+    margin-top: 10px; }
+  .purchase-button--toppings {
+    width: 245px;
+    height: 40px; }
+  .toppings__gift {
+    width: 245px;
+    height: 289px;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/gift-photo-desktop.jpg");
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+  .gift__image {
+    margin: 65px 0 65px 0; }
+  .gift__text {
+    text-align: center; }
+  .contacts--catalog {
+    background-color: white;
+    margin-bottom: 0; }
+  .contacts__map--catalog {
+    margin-top: 0; }
+  .contacts__adress--catalog {
+    top: 2080px; } }
 
 * {
   margin: 0;
