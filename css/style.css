@@ -1539,7 +1539,8 @@ input, button, textarea {
   border-radius: 0px;
   border: 1px solid #e6e6e6;
   height: 43px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  box-shadow: none; }
   .form__input:hover {
     border-color: #d1d1d1; }
   .form__input:focus {
