@@ -1,0 +1,18 @@
+@import "../mixins.scss";
+
+.active-line--form{
+  width: 170px;
+}
+
+@media (min-width: $tablet-width){
+  .active-line--form{
+    width: 152px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .active-line--form{
+    width: 170px;
+    background-color: $primary-color;
+  }
+}

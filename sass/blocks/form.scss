@@ -1,0 +1,253 @@
+@import "../mixins.scss";
+
+.form{
+  margin-top: 37px;
+}
+
+.form__description{
+  width: 280px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.form__cat{
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__input{
+  font-size: 16px;
+  border-radius: 0px;
+  border: 1px solid #e6e6e6;
+  height: 43px;
+  padding-left: 15px;
+  &:hover{
+    border-color: #d1d1d1;
+  }
+  &:focus{
+    border-color: black;
+  }
+
+}
+
+.form__input-description{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__cat--cat-name{
+  margin-bottom: 14px;
+}
+
+.form__input--cat-name{
+  width: 212px;
+}
+
+.form__input--cat-weight{
+  width: 187px;
+}
+
+.form__cat--cat-weight{
+  margin-bottom: 14px;
+}
+
+.form__input--cat-age{
+  width: 155px;
+}
+
+.form__cat--cat-age{
+  margin-bottom: 23px;
+}
+
+.form__radio{
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 21px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  margin-right: 17px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: .2s all ease-out;
+  background-size: 50% 50%;
+}
+
+.custom-radio:not(:disabled)+label:hover::before {
+  border-color: $primary-color;
+}
+
+.custom-radio:active+label::before{
+  opacity: 0.3;
+}
+
+.custom-radio:focus:not(:checked)+label::before {
+  border-color: $primary-color;
+}
+
+.custom-radio:checked+label::before {
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.15),
+  inset #fff 0 0 0 9px;
+  background-color: $primary-color;
+}
+
+@media (min-width: $tablet-width){
+  .form{
+    margin-top: 67px;
+  }
+
+  .form__description{
+    width: 628px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__tag{
+    margin-bottom: 15px;
+  }
+
+  .form__cat{
+    width: 628px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__input{
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .form__input-description{
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .form__cat--cat-name{
+    margin-bottom: 20px;
+  }
+
+  .form__input--cat-name{
+    width: 550px;
+  }
+
+  .form__input--cat-weight{
+    width: 519px;
+  }
+
+  .form__cat--cat-weight{
+    margin-bottom: 20px;
+  }
+
+  .form__input--cat-age{
+    width: 480px;
+  }
+
+  .form__cat--cat-age{
+    //margin-bottom: 23px;
+  }
+
+  .form__radio{
+    width: 598px;
+    height: 144px;
+    border: 1px solid #e6e6e6;
+    margin-top: 75px;
+    margin-bottom: 80px;
+    padding: 25px 0 25px 28px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .custom-radio+label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .custom-radio:checked+label::before {
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.15),
+    inset #fff 0 0 0 12px;
+    background-color: $primary-color;
+}
+
+}
+
+@media (min-width: $desktop-width){
+  .form__description{
+    width: 1220px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 17px;
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form{
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__cat--wrapper{
+    margin: 0;
+    width: 570px;
+  }
+
+  .form__cat{
+    width: 570px;
+  }
+
+  .form__radio{
+    margin: 0;
+    width: 542px;
+  }
+
+  .form__input--cat-name{
+    width: 489px;
+  }
+
+  .form__input--cat-weight{
+    width: 458px;
+  }
+
+  .form__input--cat-age{
+    width: 419px;
+  }
+}

@@ -1,0 +1,174 @@
+@import "../mixins.scss";
+
+.form-contacts{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.form-contacts__header{
+  width: 200px;
+}
+
+.form-contacts__header--comment{
+  width: 140px;
+}
+
+.form-contacts__header--extra{
+  width: 160px;
+}
+
+.form__green-line--owner{
+  margin-left: calc(50vw);
+}
+
+.form__green-line--comment{
+  margin-left: calc(50vw);
+}
+
+.form__green-line--extra{
+  margin-left: calc(50vw + 24px);
+}
+
+.form__catowner--email{
+  margin-bottom: 14px;
+}
+
+
+
+.form__input--email{
+  width: 202px;
+  background-image: url("../img/email.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 13px;
+  background-position-x: 180px;
+  background-position-y: center;
+}
+
+.form__input--telephone{
+  width: 187px;
+  background-image: url("../img/telephone.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position-x: 165px;
+  background-position-y: center;
+}
+
+.form__cat-owner--telephone{
+  margin-bottom: 44px;
+}
+
+.form__catowner--comment{
+  width: 262px;
+  margin-left: calc(50vw - 139px)
+}
+
+
+.form__input--comment{
+  min-width: 262px;
+  min-height: 40px;
+  width: 262px;
+  height: 150px;
+  padding-top: 16px;
+}
+
+@media (min-width: $tablet-width){
+
+  .form-catowner__wrapper{
+    margin-bottom: 80px;
+  }
+
+  .form-contacts{
+    margin-top: 100px;
+    margin-bottom: 67px;
+  }
+
+  .form-contacts__header--comment{
+    width: 218px;
+  }
+
+  .form-contacts__header--extra{
+    width: 255px;
+    margin-bottom: 60px;
+  }
+
+  .form-contacts__header{
+    width: 550px;
+  }
+
+  .form__green-line--owner, .form__green-line--comment, .form__green-line--extra{
+    margin-left: 0;
+  }
+
+  .form__input--email{
+    width: 533px;
+    background-position-x: 511px;
+  }
+
+  .form__catowner--email{
+    margin-bottom: 20px;
+  }
+
+  .form__input--telephone{
+  width: 515px;
+  background-position-x: 493px;
+  }
+  .form__catowner--comment{
+    width: 610px;
+    margin-left: calc(50vw - 312px)
+  }
+  .form__input--comment{
+    min-width: 610px;
+    min-height: 50px;
+    width: 610px;
+    height: 173px;
+  }
+
+}
+
+@media (min-width: $desktop-width){
+  .form-contacts{
+    margin-top: 65px;
+    margin-bottom: 60px;
+  }
+
+  .form-catowner__wrapper{
+    margin: 0 auto;
+    width: 1295px;
+    display: flex;
+    margin-bottom: 90px;
+  }
+  .form__input--email{
+    width: 469px;
+    background-position-x: 447px;
+  }
+
+  .form__catowner--email{
+    width: 570px;
+    margin-bottom: 0;
+
+  }
+
+  .form__cat-owner--telephone{
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .form__input--telephone{
+
+  width: 455px;
+  background-position-x: 433px;
+  }
+
+  .form__catowner--comment{
+    width: 1202px;
+    margin-left: calc(50vw - 610px)
+  }
+
+  .form__input--comment{
+    min-width: 1202px;
+    min-height: 50px;
+    width: 1202px;
+    height: 173px;
+  }
+
+}
