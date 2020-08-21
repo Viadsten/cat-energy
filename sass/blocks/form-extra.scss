@@ -134,26 +134,32 @@
 
 @media (min-width: $desktop-width){
 
+  .checkbox{
+    width: 325px;
+  }
+
   .checkbox__wrapper{
-    margin: 0 auto;
-    width: 1220px;
+    margin-left: calc(50vw - 610px);
+    width: 1100px;
     height: 116px;
     flex-direction: row;
     margin-bottom: -15px;
     :nth-child(2n){
       width: 325px;
     }
+
+    :nth-child(3){
+      width: 225px;
+    }
+
     :nth-child(4){
       width: 225px;
     }
   }
 
-  .checkbox{
-    width: 325px;
-  }
+
 
   .form-extra__button-wrapper{
-
     width: 830px;
     margin-left: calc(50vw - 610px);
     margin-bottom: 42px;

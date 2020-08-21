@@ -1,5 +1,9 @@
 @import "../mixins.scss";
 
+::-webkit-contacts-auto-fill-button {
+  opacity: 0;
+}
+
 .form-contacts{
   margin-top: 40px;
   margin-bottom: 40px;
@@ -133,7 +137,7 @@
 
   .form-catowner__wrapper{
     margin: 0 auto;
-    width: 1295px;
+    width: 1220px;
     display: flex;
     margin-bottom: 90px;
   }
@@ -160,14 +164,14 @@
   }
 
   .form__catowner--comment{
-    width: 1202px;
+    width: 1202px;//???
     margin-left: calc(50vw - 610px)
   }
 
   .form__input--comment{
-    min-width: 1202px;
+    min-width: 1202px;//???
     min-height: 50px;
-    width: 1202px;
+    width: 1202px;//???
     height: 173px;
   }
 

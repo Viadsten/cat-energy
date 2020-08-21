@@ -9,18 +9,28 @@ var catSelector = document.querySelector(".example-cat__in-selector--before");
 let after_count = 0, before_count = 1;
 
 
-$(window).resize(function() {
-  if(document.documentElement.clientWidth > 767) {
-    mainNav.style.display = "block";
-  }
+
+
+var cachedWidth = $(window).width();
+$(window).resize(function(){
+    var newWidth = $(window).width();
+    if(newWidth !== cachedWidth){
+      $(window).resize(function() {
+        if(document.documentElement.clientWidth > 767) {
+          mainNav.style.display = "block";
+        }
+      });
+
+      $(window).resize(function() {
+        if(document.documentElement.clientWidth < 767) {
+          mainNav.style.display = "none";
+          navToggle.classList.remove('toggle_active');
+        }
+      });
+        cachedWidth = newWidth;
+    }
 });
 
-$(window).resize(function() {
-  if(document.documentElement.clientWidth < 767) {
-    mainNav.style.display = "none";
-    navToggle.classList.remove('toggle_active');
-  }
-});
 
 navToggle.addEventListener('click', function(){
   if (navToggle.classList.contains('toggle_active'))
